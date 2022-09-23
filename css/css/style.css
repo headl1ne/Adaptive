@@ -1,0 +1,446 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* <-------------------------------------------------------------------------------------> */
+.header {
+  position: relative;
+  padding: 80px 0 0 ;
+}
+
+.head-image {
+  height: 60px;
+  text-align: center;
+  margin: 0 0 80px;
+}
+
+.navigation {
+  text-align: center;
+}
+
+.navigation-link {
+  color: #005bbb;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  font-weight: 400;
+  margin:0 80px;
+}
+
+.btn-burger, .btn-close {
+  display: none;
+  border: 0;
+  background: none;
+  padding: 0%;
+}
+
+.paragraph {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.paragraph-text {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 140%;
+  color: #005BBB;
+  text-align: left;
+  margin: 10px;
+}
+
+.paragraph {
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.history {
+  margin: 80px;
+}
+
+.line1 {
+  border: #005BBB 1px solid;
+  margin: 0 auto;
+  max-width: 1000px;
+  
+}
+
+.line2 {
+  border-bottom: #005BBB 1px solid;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.name {
+  color: #005BBB;
+  max-width: 1024px;
+  text-align: center;
+  font-weight: 900;
+  margin: 0 auto;
+  padding: 16px 0;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: 0.06em;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  flex-basis: 500px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background: #005BBB;
+  border-left: 10px solid #FFD500;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.box-text {
+  font-size: 48px;
+}
+
+.form {
+  border: #005BBB 1px solid;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.textarea {
+  border: 0; 
+  flex-grow: 1;
+  outline: none;
+  padding: 19px 0 0;
+  resize: none;
+  font-weight: 400;
+}
+
+::placeholder {
+  color: #005BBB;
+  opacity: 0.5;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.button {
+  cursor: pointer;
+  background: #005BBB;
+  border: 0;
+  color: #ffffff;
+  font-size: 28px;
+  letter-spacing: 0.06em;
+  padding: 13px 56px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 0 0 30px;
+}
+
+/* tablet */
+@media only screen
+and (max-width: 1199px) {
+.wrapper {
+  padding: 0 60px;
+  }
+
+.container {
+  display: block;
+}
+
+.box {
+  margin: 28px;
+  }
+
+.paragraph {
+  font-size: 24px;
+  }
+
+.name {
+  font-size: 30px;
+  }
+}
+
+/* mobile */
+@media only screen
+and (max-width: 900px) {
+.wrapper {
+  padding: 0 20px;
+  }  
+
+.paragraph,.box {
+  font-size: 16px;
+  }
+
+.paragraph,.container {
+  margin: 48px;
+  }
+
+.name {
+  font-size: 20px;
+  }
+
+.box-text {
+  display: block;
+  font-size: 24px;
+  margin:  0 0 5px;
+  }
+
+.button {
+  position: absolute;
+  left: 0;
+  bottom: -80px;
+  margin: 0%;
+  width: 100%;
+  }
+
+.form {
+  margin-bottom: 100px;
+  display: block;
+  position: relative;
+  padding: 20px;
+  }
+
+.textarea {
+  width: 100%;
+  height: 110px;
+  text-align: center;
+  padding: 0px;
+  }
+}
+
+.gallery {
+  max-width: 1352px;
+  margin: 80px auto;
+}
+
+.slick-slide {
+  position: relative;
+  border: solid #ffffff;
+  border-width: 0 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-slide:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+
+.slick-dots button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #005bbb;
+  border-radius: 50%;
+  font-size: 0;
+  padding: 0;
+  background: #ffffff;
+  margin: 0 8px;
+}
+
+.slick-dots .slick-active button {
+  background: #005bbb;
+}
+
+@media (max-width : 1199px ) {
+.navigation {
+  margin: 0 0 80px;
+  }
+
+.gallery {
+  margin : 0 -20px ;
+}
+}
+
+@media (max-width: 1024px) {
+.wrapper {
+  padding-top: 188px;
+  }
+
+.navigation {
+  display: none;
+  }
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 48px 60px 0;
+  z-index: 10;
+  }
+
+.head-image {
+  text-align: left;
+  }
+
+.btn-burger, .btn-close {
+  display: block;
+  position: absolute;
+  right: 60px;
+  top: 48px;
+  }
+
+.btn-close {
+  display: none;
+  }
+
+.menu-open.header {
+  background: #005BBB;
+  }
+
+.menu-open .head-image svg * {
+  fill: #ffffff; 
+  } 
+
+.menu-open .btn-burger {
+  display: none;
+  }
+
+.menu-open .btn-close {
+  display: block;
+  }
+
+.menu-open .navigation {
+  display: block;
+  text-align: left;
+  padding: 0 0 72px;
+  margin: 0;
+  }
+
+.menu-open .navigation-link {
+  color: #ffffff;
+  display: block;
+  margin: 0 0 48px;
+  }
+}
+
+@media (max-width : 600px ) {
+.wrapper {
+  padding-top: 0;
+  }
+
+.gallery {
+  margin-bottom: 48px;
+}
+
+.slick-slide {
+  border: 0;
+}
+
+.slick-dots button {
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+}
+
+.slick-dots {
+  margin-top: 24px;
+}
+
+.menu-open .head-image svg {
+  width: 54px;
+  height: 47px;
+}
+
+.head-image {
+  display: none;
+}
+
+.header {
+  padding:  20px 20px 0;
+}
+
+.btn-burger, .btn-close {
+  right: 20px;
+  top: 20px;
+}
+
+.menu-open .head-image {
+  display: block;
+  margin-bottom: 48px;
+}
+
+.menu-open.header {
+  min-height: 100vh;
+  position: fixed;
+  }
+
+.btn-burger svg * {
+  fill: #ffffff;
+}
+}
+
+/* 
+    1) 174 строка -> outline: none; ->  Зачем его использоать если рамку text-area не видно, и поле взаимодействия больше не станоится? 
+    2) Почему по макету на устройствах с max-width 600 отступов для слайдера нет, а в видео по верстке оступы сделаны? Просто для красоты?    
+    */
